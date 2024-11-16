@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet; /* Warna latar belakang yang lebih gelap */
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #fff;
+    background-color: #111; /* Warna latar belakang untuk kotak permainan */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+canvas {
+    display: block;
+    border-radius: 5px;
+}
+
+header {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white; /* Warna putih untuk teks header */
+    text-shadow: 1px 1px 5px rgba(0, 255, 255, 0.6);
+}
+
+#gameCanvas {
+    border: 2px solid #555; /* Warna border yang lebih lembut */
+}
+
+/* Animasi untuk pesan Game Over */
+.game-over {
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
